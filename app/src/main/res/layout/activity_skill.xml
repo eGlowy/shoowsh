@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".Contoller.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -37,11 +37,11 @@
             android:text="@string/finish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:id="@+id/skillFinishBtn" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="@+id/imageView4"
             android:fontFamily="@font/montserrat" android:background="@drawable/swoosh_button"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white" android:onClick="onSkillFinishClicked"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="0dp"
@@ -52,17 +52,18 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5">
         <ToggleButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton6" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/begginerSkillBtn" android:layout_weight="1"
                 android:textOff="@string/begginer" android:textOn="@string/begginer" android:text="@string/begginer"
                 android:background="@drawable/swoosh_toggle"
                 android:textColor="@android:color/white"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp" android:onClick="onBegginerClicked"/>
         <ToggleButton
                 android:text="@string/baller"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:layout_weight="1"
-                android:textOff="@string/baller" android:textOn="@string/baller" android:id="@+id/toggleButton7"
+                android:textOff="@string/baller" android:textOn="@string/baller" android:id="@+id/ballerSkilllBtn"
                 android:background="@drawable/swoosh_toggle"
-                android:textColor="@android:color/white" android:layout_marginStart="16dp"/>
+                android:textColor="@android:color/white" android:layout_marginStart="16dp"
+                android:onClick="onBallerClicked"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

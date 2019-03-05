@@ -1,4 +1,4 @@
-package com.example.edgarsc
+package com.example.edgarsc.Contoller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
